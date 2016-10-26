@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     
     
     var appController: TVApplicationController?
-      static let TVBaseURL = "http://localhost:9001/"
-//    static let TVBaseURL = "http://agile-academy-tvos-content.mybluemix.net/static/"
+    static let TVBaseURL = "http://localhost:9001/"
+    //    static let TVBaseURL = "http://agile-academy-tvos-content.mybluemix.net/static/"
     static let TVBootURL = "\(AppDelegate.TVBaseURL)js/application.js"
     //  static let rdbBaseURL = "http://localhost:8090/api/v1/"
 //    static let rdbBaseURL = "http://agile-academy-tvos-restdb.mybluemix.net/api/v1/"

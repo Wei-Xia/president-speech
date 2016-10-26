@@ -1,0 +1,9 @@
+[
+{<lockup template="http://agile-academy-tvos-content.mybluemix.net/static/templates/courses/course02.xml.js">
+<img src="http://agile-academy-tvos-content.mybluemix.net/static/images/thumbnails/playlists/NotAgileProgramFundamentals.jpg" width="460" height="256" />
+</lockup>
+},
+{<lockup template="http://agile-academy-tvos-content.mybluemix.net/static/templates/courses/course03.xml.js">
+<img src="http://agile-academy-tvos-content.mybluemix.net/static/images/thumbnails/playlists/NotAgileOperationsFundamentals.jpg" width="460" height="256" />
+</lockup>}
+]
