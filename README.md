@@ -1,4 +1,4 @@
-## However to run static server in AWS EC2
+## How to run static server in AWS EC2
 ### Set up AWS account
 1. You can use student account with $100 credit for free
 
