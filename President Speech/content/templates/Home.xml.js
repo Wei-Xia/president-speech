@@ -39,7 +39,8 @@ var Template = function() {
                     <!-- <lockup template="${this.BASEURL}/templates/Stack.xml.js">
                         <img src="${this.BASEURL}images/homeImage/top1.png" width="1740" height="784"/>
                     </lockup> -->
-                    <lockup template="${this.BASEURL}/templates/courses/${findCurrentPlaylist()}">
+                    <!-- <lockup template="${this.BASEURL}/templates/courses/${findCurrentPlaylist()}"> -->
+                    <lockup template="${this.BASEURL}/templates/courses/test.xml.js">
                         <!-- <title style="tv-text-style:title; margin: 0 10; color:white;">Featured Videos</title> -->
                         <img src="${this.BASEURL}images/homeImage/top2.png" width="1740" height="784"/>
                     </lockup>
@@ -115,23 +116,23 @@ var Template = function() {
                 </header>
                 <section>
                     <lockup template="${this.BASEURL}/templates/courses/course01.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("01ATasteOfAgile")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">A Taste of Agile</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course03.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("03AgileOperationsFundamentals")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Operations Fundamentals</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course04.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("04AgileProjectIterationChangeManagement")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Project, Iteration, Change Management</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course05.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("05AgileProductOwnership")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Product Ownership</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course11.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("11AgileTeamCoaching")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Team Coaching</title> -->
                     </lockup>
                 </section>
@@ -144,35 +145,35 @@ var Template = function() {
                 <section>
 
                     <lockup template="${this.BASEURL}/templates/courses/course01.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("01ATasteOfAgile")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">A Taste of Agile</title> -->
                     </lockup>
                    <lockup template="${this.BASEURL}/templates/courses/course02.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("02AgileProgramFundamentals")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Program Fundamentals</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course04.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("04AgileProjectIterationChangeManagement")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Project, Iteration, Change Management</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course07.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("07AgileDevOpsDevelopment")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Development</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course08.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("08AgileDevOpsTesting")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Testing</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course09.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("09AgileDevOpsDeployment")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Deployment</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course10.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("10AgileDevOpsInfrastructure")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Infrastructure</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course11.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("11AgileTeamCoaching")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Team Coaching</title> -->
                     </lockup>
                 </section>
@@ -184,23 +185,23 @@ var Template = function() {
                 </header>
                 <section>
                     <lockup template="${this.BASEURL}/templates/courses/course01.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("01ATasteOfAgile")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">A Taste of Agile</title> -->
                     </lockup>
                    <lockup template="${this.BASEURL}/templates/courses/course02.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("02AgileProgramFundamentals")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Program Fundamentals</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course04.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("04AgileProjectIterationChangeManagement")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Project, Iteration, Change Management</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course05.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("05AgileProductOwnership")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Product Ownership</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course11.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("11AgileTeamCoaching")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Team Coaching</title> -->
                     </lockup>
                 </section>
@@ -212,15 +213,15 @@ var Template = function() {
                 </header>
                 <section>
                     <lockup template="${this.BASEURL}/templates/courses/course01.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("01ATasteOfAgile")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">A Taste of Agile</title> -->
                     </lockup>
                    <lockup template="${this.BASEURL}/templates/courses/course02.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("02AgileProgramFundamentals")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Program Fundamentals</title> -->
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/course06.xml.js">
-                        <img src="${this.BASEURL}${determineWatchProgress("06AgileLeadershipStrategy")}" width="438.4" height="244"/>
+                        <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="438.4" height="244"/>
                         <!-- <title class="showTextOnHighlight">Leadership and Strategy</title> -->
                     </lockup>
                 </section>
@@ -230,3 +231,5 @@ var Template = function() {
     </stackTemplate>
 </document>`
 }
+
+<!-- <img src="${this.BASEURL}${determineWatchProgress("01ATasteOfAgile")}" width="438.4" height="244"/> -->

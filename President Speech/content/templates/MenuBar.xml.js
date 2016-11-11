@@ -3,7 +3,7 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
   <menuBarTemplate>
     <menuBar>
       <menuItem template="${this.BASEURL}templates/Home.xml.js" presentation="menuBarItemPresenter">
-        <title>Home</title>
+        <title>Feature</title>
       </menuItem>
       <menuItem template="${this.BASEURL}templates/Stack.xml.js" presentation="menuBarItemPresenter">
         <title>Agile Courses</title>
