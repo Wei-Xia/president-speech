@@ -68,102 +68,102 @@ App.onLaunch = function(options) {
 
     //Start making some API calls to get the metadata, user watch history
 
-    //Get the user's history from Cloudant
-    var sessionRequest = new XMLHttpRequest(),
-        method = 'GET',
-        url = getBaseAPIURL() + 'sessions/' + getUUID() + '/status';
-
-    sessionRequest.open(method, url, false);
-    sessionRequest.onreadystatechange = function() {
-        var status;
-        var data;
-        if (sessionRequest.readyState == 4) {
-            status = sessionRequest.status;
-            if (status == 200) {
-                data = JSON.parse(sessionRequest.responseText);
-                //If it worked, set the watch History
-                setVideoList(data)
-            } else {
-                //Otherwise try making them a document in the database (as they probably don't exist)
-                sessionRequest = new XMLHttpRequest(), method = 'POST', url = getBaseAPIURL() + 'sessions/';
-                sessionRequest.open(method, url, false);
-                sessionRequest.setRequestHeader('Content-Type', 'application/json');
-                sessionRequest.onreadystatechange = function() {
-                    if (sessionRequest.readyState == 4 && sessionRequest.status == 200) {
-                        console.log("Successfully added (" + getUUID() + ") to the database!")
-                    } else {
-                        //At this point there is something wrong with the servers so display an error
-                        var alert = errorFailure();
-                        navigationDocument.presentModal(alert);
-                        throw ("Playback Example: unable to evaluate scripts.");
-                    }
-                }
-                sessionRequest.send(JSON.stringify({
-                    _id: getUUID(),
-                    videoStatus: getVideoList()
-                }));
-            }
-        }
-    }
-    sessionRequest.send();
-    var videoMetaDataRequest = new XMLHttpRequest(),
-        method = 'GET',
-        url = getBaseAPIURL() + 'meta/v?type=video';
-
-    videoMetaDataRequest.open(method, url, false);
-    videoMetaDataRequest.onreadystatechange = function() {
-        var status;
-        var data;
-        if (videoMetaDataRequest.readyState == 4) {
-            status = videoMetaDataRequest.status;
-            if (status == 200) {
-
-                data = JSON.parse(videoMetaDataRequest.responseText);
-                console.log(data)
-                var temp = {}
-                for (var i = 0; i < data.length; i++) {
-                    temp[data[i]["doc"]["_id"]] = data[i]["doc"]
-                }
-                setMetaVideoList(temp)
-
-            } else {
-                var alert = errorFailure();
-                navigationDocument.presentModal(alert);
-
-                throw ("Playback Example: unable to evaluate scripts.");
-
-            }
-        }
-    }
-    videoMetaDataRequest.send();
-    var playlistMetaDataRequest = new XMLHttpRequest(),
-        method = 'GET',
-        url = getBaseAPIURL() + 'meta/v?type=playlist';
-
-    playlistMetaDataRequest.open(method, url, false);
-    playlistMetaDataRequest.onreadystatechange = function() {
-        var status;
-        var data;
-        if (playlistMetaDataRequest.readyState == 4) {
-            status = playlistMetaDataRequest.status;
-            if (status == 200) {
-
-                data = JSON.parse(playlistMetaDataRequest.responseText);
-
-                var temp = {}
-                for (var i = 0; i < data.length; i++) {
-
-                    temp[data[i]["doc"]["_id"]] = data[i]["doc"]
-                }
-                setMetaPlayList(temp)
-            } else {
-                var alert = errorFailure();
-                navigationDocument.presentModal(alert);
-                throw ("Playback Example: unable to evaluate scripts.");
-            }
-        }
-    }
-    playlistMetaDataRequest.send();
+    // //Get the user's history from Cloudant
+    // var sessionRequest = new XMLHttpRequest(),
+    //     method = 'GET',
+    //     url = getBaseAPIURL() + 'sessions/' + getUUID() + '/status';
+    // 
+    // sessionRequest.open(method, url, false);
+    // sessionRequest.onreadystatechange = function() {
+    //     var status;
+    //     var data;
+    //     if (sessionRequest.readyState == 4) {
+    //         status = sessionRequest.status;
+    //         if (status == 200) {
+    //             data = JSON.parse(sessionRequest.responseText);
+    //             //If it worked, set the watch History
+    //             setVideoList(data)
+    //         } else {
+    //             //Otherwise try making them a document in the database (as they probably don't exist)
+    //             sessionRequest = new XMLHttpRequest(), method = 'POST', url = getBaseAPIURL() + 'sessions/';
+    //             sessionRequest.open(method, url, false);
+    //             sessionRequest.setRequestHeader('Content-Type', 'application/json');
+    //             sessionRequest.onreadystatechange = function() {
+    //                 if (sessionRequest.readyState == 4 && sessionRequest.status == 200) {
+    //                     console.log("Successfully added (" + getUUID() + ") to the database!")
+    //                 } else {
+    //                     //At this point there is something wrong with the servers so display an error
+    //                     var alert = errorFailure();
+    //                     navigationDocument.presentModal(alert);
+    //                     throw ("Playback Example: unable to evaluate scripts.");
+    //                 }
+    //             }
+    //             sessionRequest.send(JSON.stringify({
+    //                 _id: getUUID(),
+    //                 videoStatus: getVideoList()
+    //             }));
+    //         }
+    //     }
+    // }
+    // sessionRequest.send();
+    // var videoMetaDataRequest = new XMLHttpRequest(),
+    //     method = 'GET',
+    //     url = getBaseAPIURL() + 'meta/v?type=video';
+    // 
+    // videoMetaDataRequest.open(method, url, false);
+    // videoMetaDataRequest.onreadystatechange = function() {
+    //     var status;
+    //     var data;
+    //     if (videoMetaDataRequest.readyState == 4) {
+    //         status = videoMetaDataRequest.status;
+    //         if (status == 200) {
+    // 
+    //             data = JSON.parse(videoMetaDataRequest.responseText);
+    //             console.log(data)
+    //             var temp = {}
+    //             for (var i = 0; i < data.length; i++) {
+    //                 temp[data[i]["doc"]["_id"]] = data[i]["doc"]
+    //             }
+    //             setMetaVideoList(temp)
+    // 
+    //         } else {
+    //             var alert = errorFailure();
+    //             navigationDocument.presentModal(alert);
+    // 
+    //             throw ("Playback Example: unable to evaluate scripts.");
+    // 
+    //         }
+    //     }
+    // }
+    // videoMetaDataRequest.send();
+    // var playlistMetaDataRequest = new XMLHttpRequest(),
+    //     method = 'GET',
+    //     url = getBaseAPIURL() + 'meta/v?type=playlist';
+    // 
+    // playlistMetaDataRequest.open(method, url, false);
+    // playlistMetaDataRequest.onreadystatechange = function() {
+    //     var status;
+    //     var data;
+    //     if (playlistMetaDataRequest.readyState == 4) {
+    //         status = playlistMetaDataRequest.status;
+    //         if (status == 200) {
+    // 
+    //             data = JSON.parse(playlistMetaDataRequest.responseText);
+    // 
+    //             var temp = {}
+    //             for (var i = 0; i < data.length; i++) {
+    // 
+    //                 temp[data[i]["doc"]["_id"]] = data[i]["doc"]
+    //             }
+    //             setMetaPlayList(temp)
+    //         } else {
+    //             var alert = errorFailure();
+    //             navigationDocument.presentModal(alert);
+    //             throw ("Playback Example: unable to evaluate scripts.");
+    //         }
+    //     }
+    // }
+    // playlistMetaDataRequest.send();
 
     evaluateScripts(javascriptFiles, function(success) {
         if (success) {
@@ -229,20 +229,20 @@ var createAlert = function(title, description) {
 }
 
 //Get the proper thumbnail for a playlist based on if they have watched all the videos in it or not
-var determineWatchProgress = function(playlistName) {
-    var temp = getMetaPlayList();
-    //Check all the videos in the playlist. If any of them are either not watched at all or have watched 
-    //less than 98%, we consider it not watched, so return the "nDoneThumb", which is the not done thumbnail
-    for (var i = 0; i < temp[playlistName].videos.length; i++) {
-        var tempName = temp[playlistName].videos[i];
-        var tempVidList = getVideoList();
-        var tempVideoMeta = getMetaVideoList();
-        if (typeof tempVidList[tempName] == "undefined" || (tempVidList[tempName].seekToTime / tempVideoMeta[tempName].length < 0.98)) {
-            return temp[playlistName].nDoneThumb;
-        }
-    }
-    return temp[playlistName].doneThumb;
-}
+// var determineWatchProgress = function(playlistName) {
+//     var temp = getMetaPlayList();
+//     //Check all the videos in the playlist. If any of them are either not watched at all or have watched 
+//     //less than 98%, we consider it not watched, so return the "nDoneThumb", which is the not done thumbnail
+//     for (var i = 0; i < temp[playlistName].videos.length; i++) {
+//         var tempName = temp[playlistName].videos[i];
+//         var tempVidList = getVideoList();
+//         var tempVideoMeta = getMetaVideoList();
+//         if (typeof tempVidList[tempName] == "undefined" || (tempVidList[tempName].seekToTime / tempVideoMeta[tempName].length < 0.98)) {
+//             return temp[playlistName].nDoneThumb;
+//         }
+//     }
+//     return temp[playlistName].doneThumb;
+// }
 
 //Generate the proper glyph that goes next to  video in a play list to determine of it is watched,
 //Partially watched, or not watched at all
