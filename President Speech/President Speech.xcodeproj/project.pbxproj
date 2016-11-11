@@ -53,7 +53,7 @@
 				BDFB33B41DBFF2E6002E6B91 /* Info.plist */,
 			);
 			name = "President Speech";
-			path = "Commencement Speech";
+			path = "President Speech";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,7 +72,7 @@
 			dependencies = (
 			);
 			name = "President Speech";
-			productName = "Commencement Speech";
+			productName = "President Speech";
 			productReference = BDFB33AB1DBFF2E6002E6B91 /* President Speech.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -219,7 +219,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Commencement Speech/Info.plist";
+				INFOPLIST_FILE = "President Speech/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.weixia.be.President-Speech";
 				PRODUCT_NAME = "President Speech";
@@ -231,7 +231,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Commencement Speech/Info.plist";
+				INFOPLIST_FILE = "President Speech/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.weixia.be.President-Speech";
 				PRODUCT_NAME = "President Speech";
