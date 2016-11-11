@@ -22,57 +22,65 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
   </head>
   <stackTemplate class="body">
     <background>
-      <img class="blurOverlayImage" src="${this.BASEURL}images/background/agilecourse_top.png" />
+      <img class="blurOverlayImage" src="${this.BASEURL}images/background/home-bg4.jpg" />
     </background>
     <banner class="blurOverlayBanner">
-      <title style="tv-visual-effect: none; color: rgba(255, 255, 255, 1);">Agile Course Playlists</title>
+      <title style="tv-visual-effect: none; color: black;">Presidents of the United States</title>
     </banner>
     <collectionList>
       <grid class="5ColumnGrid">
         <section>
           <lockup template="${this.BASEURL}/templates/courses/course01.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("01ATasteOfAgile")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">A Taste of Agile</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Barack Obama</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course02.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("02AgileProgramFundamentals")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Program Fundamentals</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">George W. Bush</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course03.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("03AgileOperationsFundamentals")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Operations Fundamentals</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Bill Clinton</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course04.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("04AgileProjectIterationChangeManagement")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Project, Iteration, and Change Management</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">George H. W. Bush</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course05.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("05AgileProductOwnership")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Product Ownership</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Ronald Reagan</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course06.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("06AgileLeadershipStrategy")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Leadership and Strategy</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Jimmy Carter</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course07.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("07AgileDevOpsDevelopment")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Development</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Gerald Ford</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course08.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("08AgileDevOpsTesting")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Testing</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Richard Nixon</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course09.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("09AgileDevOpsDeployment")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Deployment</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Lyndon B. Johnson</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course10.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("10AgileDevOpsInfrastructure")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Infrastructure</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">John F. Kennedy</title>
           </lockup>
           <lockup template="${this.BASEURL}/templates/courses/course11.xml.js">
-            <img src="${this.BASEURL}${determineWatchProgress("11AgileTeamCoaching")}" width="460" height="256" />
-            <!-- <title class="showTextOnHighlight">Team Coaching</title> -->
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Dwight D. Eisenhower</title>
+          </lockup>
+          <lockup template="${this.BASEURL}/templates/courses/course11.xml.js">
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Harry S. Truman</title>
+          </lockup>
+          <lockup template="${this.BASEURL}/templates/courses/course11.xml.js">
+            <img src="${this.BASEURL}images/homeImage/chefImage/001.png" width="460" height="256" />
+            <title class="showTextOnHighlight">Franklin D. Roosevelt</title>
           </lockup>
         </section>
       </grid>
