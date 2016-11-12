@@ -8,8 +8,8 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
       <menuItem template="${this.BASEURL}templates/Stack.xml.js" presentation="menuBarItemPresenter">
         <title>Presidents</title>
       </menuItem>
-      <menuItem template="${this.BASEURL}templates/History.xml.js" presentation="historyPresenter">
-        <title>History</title>
+      <menuItem template="${this.BASEURL}templates/Catalog.xml.js" presentation="historyPresenter">
+        <title>Catalog</title>
       </menuItem>
       <menuItem template="${this.BASEURL}templates/Search.xml.js" presentation="searchPresenter">
         <title>Search</title>
