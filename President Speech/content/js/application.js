@@ -209,24 +209,24 @@ App.onSuspend = function() {
 }
 
 
-var createAlert = function(title, description) {
-    var alertString = `<?xml version="1.0" encoding="UTF-8" ?>
-    <document>
-        <alertTemplate>
-           <title>Do you want to continue watching?</title>
-           <button>
-              <text>Yes</text>
-           </button>
-           <button>
-              <text>No</text>
-           </button>
-        </alertTemplate>
-    </document>`
-
-    var parser = new DOMParser();
-    var alertDoc = parser.parseFromString(alertString, "application/xml");
-    return alertDoc
-}
+// var createAlert = function(title, description) {
+//     var alertString = `<?xml version="1.0" encoding="UTF-8" ?>
+//     <document>
+//         <alertTemplate>
+//            <title>Do you want to continue watching?</title>
+//            <button>
+//               <text>Yes</text>
+//            </button>
+//            <button>
+//               <text>No</text>
+//            </button>
+//         </alertTemplate>
+//     </document>`
+// 
+//     var parser = new DOMParser();
+//     var alertDoc = parser.parseFromString(alertString, "application/xml");
+//     return alertDoc
+// }
 
 //Get the proper thumbnail for a playlist based on if they have watched all the videos in it or not
 // var determineWatchProgress = function(playlistName) {

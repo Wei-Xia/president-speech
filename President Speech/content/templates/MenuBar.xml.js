@@ -11,12 +11,12 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
       <menuItem template="${this.BASEURL}templates/Catalog.xml.js" presentation="historyPresenter">
         <title>Catalog</title>
       </menuItem>
-      <menuItem template="${this.BASEURL}templates/Search.xml.js" presentation="searchPresenter">
+      <!-- <menuItem template="${this.BASEURL}templates/Search.xml.js" presentation="searchPresenter">
         <title>Search</title>
       </menuItem>
       <menuItem template="${this.BASEURL}templates/Settings.xml.js" presentation="menuBarItemPresenter">
         <title>Settings</title>
-      </menuItem>
+      </menuItem> -->
     </menuBar>
   </menuBarTemplate>
 </document>`
