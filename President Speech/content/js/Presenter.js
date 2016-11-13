@@ -122,11 +122,11 @@ var Presenter = {
             }
             currentVideo = vidName;
             //Set all data for the video mediaItem
-            mediaItem.resumeTime = currentVideoList[vidName].seekToTime;
-            mediaItem.description = metaData[vidName].description;
-            mediaItem.title = metaData[vidName].title;
-            mediaItem.thumbnail = metaData[vidName].thumbnail;
-            mediaItem.link = metaData[vidName].link;
+            // mediaItem.resumeTime = currentVideoList[vidName].seekToTime;
+            // mediaItem.description = metaData[vidName].description;
+            // mediaItem.title = metaData[vidName].title;
+            // mediaItem.thumbnail = metaData[vidName].thumbnail;
+            // mediaItem.link = metaData[vidName].link;
             player.playlist = playlist;
             //Push the video
             player.playlist.push(mediaItem);
@@ -273,11 +273,11 @@ var Presenter = {
             var temp = getMetaVideoList();
 
             //If its the end of the video, pause the video and display a "continue screen"
-            if ((Math.round(currentTime)) == temp[currentVideo]["length"] - 1) {
-                // currentPlayer.pause();
-                // var alert = createAlert();
-                // navigationDocument.presentModal(alert);
-            }
+            // if ((Math.round(currentTime)) == temp[currentVideo]["length"] - 1) {
+            //     // currentPlayer.pause();
+            //     // var alert = createAlert();
+            //     // navigationDocument.presentModal(alert);
+            // }
         }, {
             interval: 1
         });
