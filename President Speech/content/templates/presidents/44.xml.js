@@ -11,13 +11,17 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
     </style>
   </head>
   <compilationTemplate theme="dark">
+    <background>
+        <img src="${this.BASEURL}images/stackImage/bg_list_uber.jpg" />
+    </background>
+    
     <list>
-      <relatedContent>
+      <!-- <relatedContent>
         <itemBanner>
           <heroImg src="${this.BASEURL}images/stackImage/stack01.png" width="650" height="650" />
           ${getUUID()}
         </itemBanner>
-      </relatedContent>
+      </relatedContent> -->
       <header>
         <title>A Taste of Agile</title>
         <subtitle>Aware</subtitle>
