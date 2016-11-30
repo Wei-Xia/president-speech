@@ -31,7 +31,7 @@ var Template = function() {
     </head>
     <stackTemplate class = "body">
           <background>
-            <img class="blurOverlayImage" src="${this.BASEURL}images/background/home-bg4.jpg" />
+            <!-- <img class="blurOverlayImage" src="${this.BASEURL}images/background/home-bg4.jpg" /> -->
           </background>
         <collectionList>
             <carousel>
@@ -42,10 +42,10 @@ var Template = function() {
                     <!-- <lockup template="${this.BASEURL}/templates/courses/${findCurrentPlaylist()}"> -->
                     <lockup template="${this.BASEURL}/templates/courses/test.xml.js">
                         <!-- <title style="tv-text-style:title; margin: 0 10; color:white;">Featured Videos</title> -->
-                        <img src="${this.BASEURL}images/homeImage/top2.png" width="1740" height="600"/>
+                        <img src="${this.BASEURL}images/homeImage/top1.jpg" width="1740" height="700"/>
                     </lockup>
                     <lockup template="${this.BASEURL}/templates/courses/chef.xml.js">
-                        <img src="${this.BASEURL}images/homeImage/top3.png" width="1740" height="600"/>
+                        <img src="${this.BASEURL}images/homeImage/top2.jpg" width="1740" height="700"/>
                     </lockup>
                 </section>
             </carousel>
